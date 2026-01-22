@@ -48,7 +48,7 @@ const pizzas = {
         ingredientes: "Harina de trigo Integral (hierro 55 mg/kg, niacina 48 mg/kg, tiamina 5 mg/kg, riboflavina 4 mg/kg y acido folico 1.2 mg/kg), levadura, sal, azuÌcar, agua, salsa de tomate (pasta de tomate, estabilizante (sin 415), acidulante (sin 330), conservante (sin 202, 211), colorantes (sin 150, sin 129)), queso mozzarella (leche pasteurizada de vaca, regulador de acidez (sin 330), agente endurecedor (sin 509), cuajo y cultivos laÌcteos. cobertura: sustancia conservadora (sin 235)), cebolla blanca, aceituna verde (aceituna verde, agua, sal, ácido láctico, sorbato de potasio y benzoato de sodio) y pimiento."
     },
 
-     inter: {
+     intercontinental: {
         nombre: "Intercontinental",
         descripcion: "Masa de Pizza Precocida con: Salsa, Queso Mozzarella, Jamón, Cebolla Blanca y Champiñones",
         peso: "530 grs",
@@ -188,4 +188,5 @@ updateDates();
 // Ajustar tamaño inicial
 
 ajustarTamañoIngredientes();
+
 
