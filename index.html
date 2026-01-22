@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Stickers - Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="controls no-print">
+    <h2>Generador de Sticker - PIZZA FACTORY</h2>
+
+    <label>Tipo de Pizza</label>
+    <select id="pizzaSelect">
+        <option value="">-- Seleccionar --</option>
+        <option value="pack3">3-PACK</option>
+        <option value="mozza">MOZZA</option>
+        <option value="ame">AME</option>
+        <option value="hawa">HAWA</option>
+        <option value="pepe">PEPE</option>
+        <option value="vegeta1">VEGETA</option>
+        <option value="vegeta">VEGETA INT</option>
+        <option value="megaInter">MEGA INTER</option>
+        <option value="parmecino">PARMECINO</option>
+        <option value="quesolicia">QUESOLICIA</option>
+        <option value="carnivora">CARNIVORA</option>
+        <option value="estrellita">ESTRELLITA</option>
+    </select>
+    
+
+    <label>Fecha Producción</label>
+    <input type="date" id="fechaProduccion">
+
+    <label>Fecha Vencimiento</label>
+    <input type="date" id="fechaVencimiento">
+
+    <button onclick="window.print()">Imprimir Sticker</button>
+</div>
+
+<!-- STICKER -->
+<div class="sticker">
+    <div class="sticker-content">
+        <!-- SECCIÓN FIJA: NOMBRE -->
+        <div class="fixed-section nombre-section">
+            <h1 id="pizzaNombre">Mega Inter</h1>
+        </div>
+
+        <!-- SECCIÓN FIJA: DESCRIPCIÓN -->
+        <div class="fixed-section descripcion-section">
+            <div id="pizzaDescripcion"></div>
+        </div>
+
+        <!-- SECCIÓN FIJA: FECHAS -->
+        <div class="fixed-section fechas-section">
+            <div class="section">
+                <span class="label">F. PRODUCCIÓN:</span>
+                <span id="prodText"></span>
+            </div>
+
+            <div class="section">
+                <span class="label">F. VENCIMIENTO:</span>
+                <span id="vencText"></span>
+                <span class="label" style="margin-left: 15px;">PESO NETO:</span>
+                <span id="pesoText"></span>
+            </div>
+
+            <div class="section">
+                <span class="label">LOTE:</span> 1
+            </div>
+
+            <!-- INGREDIENTES AHORA ESTÁ FIJO AQUÍ -->
+            <div class="section ingredientes-fijos">
+                <span class="label">INGREDIENTES:</span>
+                <span id="ingredientesText"></span>
+            </div>
+        </div>
+
+        <!-- SECCIÓN FIJA: CONTACTO -->
+        <div class="fixed-section contacto-section">
+            <div class="section">
+                <span class="label">CONTACTO:</span> 980831231
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
